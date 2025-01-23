@@ -1,0 +1,21 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Python files
+*.py text diff=python
+
+# Documentation
+*.md text diff=markdown
+*.rst text
+
+# Test files
+*.csv text
+*.json text
+*.yml text
+*.yaml text
+
+# Scripts should use LF
+*.sh text eol=lf
+
+# Exclude from GitHub language stats
+tests/* linguist-vendored=true
